@@ -1,0 +1,91 @@
+/* font și culori comune cu style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9; /* gri pe tot ecranul */
+    color: #003366;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centru orizontal */
+    padding: 20px 0;
+    min-height: 100vh; /* asigură că body umple tot ecranul */
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff; /* container alb pe fundal gri */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #0055cc;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0055cc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto; /* centru orizontal */
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto; /* centru */
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #0055cc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #cce0ff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f7ff;
+}
+
+a {
+    color: #0055cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #003366;
+}

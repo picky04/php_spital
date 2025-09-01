@@ -8,7 +8,7 @@ $auth = new AuthController($pdo);
 $route = $_GET['route'] ?? 'login';
 
 //debug
-echo "<pre>ROUTE: "; var_dump($route); echo "</pre>";
+//echo "<pre>ROUTE: "; var_dump($route); echo "</pre>";
 $message = "";
 //echo '<pre>';
 //print_r($_SESSION['user']);
@@ -44,11 +44,14 @@ switch ($route) {
         }
         break;
 
-
     case 'logout':
         $auth->logout();
-        header("Location: ?route=login");
+        session_start();
+        session_unset(); // șterge toate variabilele din sesiune
+        session_destroy(); // distruge sesiunea
+        header("Location: ?route=login"); // redirect la login
         exit;
+
 
     case 'home':
         if (!$auth->isAuthenticated()) {

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff; /* fundal deschis albastru */
+    color: #003366; /* text albastru închis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupă tot ecranul */
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: #0055cc; /* titlu albastru */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0055cc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0055cc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+a {
+    color: #0055cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #003366;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #cce0ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.container input, .container button {
+    width: 100%;
+    box-sizing: border-box;
+}

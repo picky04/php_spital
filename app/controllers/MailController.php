@@ -1,5 +1,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/../../vendor/autoload.php'; // corect path-ul
@@ -32,8 +33,8 @@ class MailController {
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'cheta.pe.chat@gmail.com';
-                $mail->Password   = 'Barcapeapa11'; // parola de aplicație Gmail
+                $mail->Username   = 'petrica.chitacu04@gmail.com';
+                $mail->Password   = 'yscl zqmh anon erfk'; // parola de aplicație Gmail
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port       = 465;
 
@@ -50,7 +51,7 @@ class MailController {
                 $successCount++;
             } catch (Exception $e) {
                 $failCount++;
-                // opțional: log $mail->ErrorInfo
+                // ==opțional: log $mail->ErrorInfo
             }
         }
 

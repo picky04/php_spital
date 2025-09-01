@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Adaugă Pacient</title>
+    <link rel="stylesheet" href="/spital/public/css/style2.css">
 </head>
 <body>
+<div class="container">
 <h1>Adaugă Pacient</h1>
 
 <form method="POST" action="?route=add_pacient">
@@ -44,5 +46,6 @@
 
 <br>
 <a href="?route=manage_pacients">Înapoi la Gestionare Pacienți</a>
+</div>
 </body>
 </html>
